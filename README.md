@@ -1,0 +1,8 @@
+The problem that I attempted to solve with machine learning is to be able to predict ML career job titles by other factors of a particular job. I chose this problem because I found it very interesting to be able to know what job someone works based on other factors. It also seemed useful to be able to understand how different factors about jobs relate to each other since I am looking to start a career in the near future.
+I used K-NN, Logistic Regression, LinearSVC, Random Forest, and MLPC to find the best results.
+- For K-NN I used three, six, and nine nearest neighbors to see which would perform the best.
+- For Logistic Regression I cycled between c values .01, .1 , 1, 10, 100 and max iterations of one, three, and five thousand in order to find the best combination.
+- For random forest I used 10000 estimators because the performance was lower for the lower numbers of estimators.
+- For MLPC I iterated through sets of two hidden nodes of values 10, 100, 200, 300, and 400 and alpha values of .0001, .001, .01, .1, and 1 to determine what the best combination of parameters was. I only used the lbfgs solver because the other two solver options did not yield any better data.
+
+I was able to acheive a performance of 35%. Given the number of classes, this means that my work more than doubles the rate of accuracy from simple random guess. My performance does not really have any other approaches that I can compare it to since no one has tried to solve the problem that I have. This project helped me to learn a lot about how to train models and how to understand what my results mean. It also helped me to gain an intuition about what models to use and when.
